@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for Ashish - CR of CSE Department</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .poster-container {
+            width: 90%;
+            max-width: 500px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        #cr-image {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 50%;
+            margin-top: -50px;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        #vote-button {
+            padding: 12px 30px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #vote-button:hover {
+            background-color: #0056b3;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.9em;
+                margin-bottom: 20px;
+            }
+
+            #vote-button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+
+            #cr-image {
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .poster-container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.1em;
+            }
+
+            p {
+                font-size: 0.8em;
+                margin-bottom: 15px;
+            }
+
+            #vote-button {
+                padding: 8px 18px;
+                font-size: 0.85em;
+            }
+
+            #cr-image {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster-container">
+        <div class="gradient-bg">
+            <img id="cr-image" src="f51e8b44-828a-4c23-84ce-98d546eaa5d7.png" alt="Ashish Image">
+        </div>
+        <h1>Vote for Ashish</h1>
+        <h2>Your Next Class Representative</h2>
+        <p>CSE Department, AB Group, Pre-Final Year</p>
+        <button id="vote-button">Vote Now</button>
+    </div>
+    <script>
+        // Function to update the image of Ashish (if needed)
+        function updateCRImage(imagePath) {
+            document.getElementById('cr-image').src = imagePath;
+        }
+
+        // Example: Update the image by calling the function
+        updateCRImage('f51e8b44-828a-4c23-84ce-98d546eaa5d7.png');
+    </script>
+</body>
+</html>
